@@ -1,6 +1,12 @@
 let anchors = document.getElementsByTagName(`a`)
 
 for (let anchor of anchors) {
+  if (anchor.href.startsWith(`https://news.ycombinator.com`)) {
+    if (!anchor.href.includes(`item?id`)) {
+      continue
+    }
+  }
+
   anchor.setAttribute(`target`, `_blank`)
   anchor.classList.add(`action_link`)
 }
