@@ -1,0 +1,47 @@
+:root {
+  --background_color: rgb(77, 77, 77);
+  --font_color: rgb(240, 240, 240);
+  --font_color_2: rgb(180, 180, 180);
+}
+
+@font-face {
+  font-family: "Nova Square";
+  src: url("NovaSquare-Regular.ttf") format("truetype");
+}
+
+body, html, #hnmain {
+  background-color: var(--background_color) !important;
+}
+
+#hnmain * {
+  font-family: "Nova Square", sans-serif, monospace !important;
+}
+
+.titleline *,
+.comment *,
+.yclinks *
+{
+  color: var(--font_color) !important;
+}
+
+textarea {
+  height: 2rem !important;
+}
+
+.action_link {
+  cursor: pointer;
+  transition: text-shadow 170ms;
+}
+
+.action_link:hover {
+  text-shadow: 0 0 0.18rem currentColor;
+}
+
+.subtext,
+.subtext a:visited,
+.subtext a:link,
+.subtext a:active,
+.subtext a:hover
+{
+  color: var(--font_color_2) !important;
+}
