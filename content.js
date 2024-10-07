@@ -13,3 +13,9 @@ for (let img of images) {
     img.src = icon_path
   }
 }
+
+let textareas = document.getElementsByTagName(`textarea`)
+
+for (let area of textareas) {
+  area.rows = 2
+}
