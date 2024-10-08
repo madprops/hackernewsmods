@@ -24,4 +24,5 @@ let textareas = document.getElementsByTagName(`textarea`)
 
 for (let area of textareas) {
   area.rows = 2
+  area.placeholder = "Write something..."
 }
